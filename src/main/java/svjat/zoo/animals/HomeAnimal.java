@@ -1,6 +1,6 @@
 package svjat.zoo.animals;
 
-public class HomeAnimal extends ZooAnimals  implements Voice{
+public class HomeAnimal extends ZooAnimals{
 
 
     @Override

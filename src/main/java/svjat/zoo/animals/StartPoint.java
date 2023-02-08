@@ -10,7 +10,10 @@ public class StartPoint {
         listZoo.add(new Cat());
         listZoo.add(new Dog());
         listZoo.add(new Wolf());
+        listZoo.add(new Fox());
+        listZoo.add(new Hamster());
 
+        System.out.println("Размер списка " + listZoo.size());
 
         for(ZooAnimals o:listZoo){
             if(o != null) {

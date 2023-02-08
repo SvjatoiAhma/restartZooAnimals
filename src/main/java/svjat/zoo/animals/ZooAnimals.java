@@ -3,6 +3,7 @@ package svjat.zoo.animals;
 public abstract class ZooAnimals implements Voice{
     @Override
     public int hashCode() {
+
         return super.hashCode();
     }
 
