@@ -1,6 +1,6 @@
 package svjat.zoo.animals;
 
-public abstract class ZooAnimals implements Voice{
+public abstract class ZooAnimal implements Voice{
     @Override
     public int hashCode() {
 
@@ -17,5 +17,9 @@ public abstract class ZooAnimals implements Voice{
         }
         return this == obj;
     }
+
+    @Override
+    public abstract void voice();
+
 
 }

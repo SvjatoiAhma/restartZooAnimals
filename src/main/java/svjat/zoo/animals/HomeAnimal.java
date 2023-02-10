@@ -1,6 +1,6 @@
 package svjat.zoo.animals;
 
-public class HomeAnimal extends ZooAnimals{
+public class HomeAnimal extends ZooAnimal{
 
 
     @Override
