@@ -4,7 +4,10 @@ public class ZooStartPoint {
     public static void main(String[] args) {
         Zoo zoo = new Zoo();
         //  zoo.addAnimal(new Fox()); //  убрали из списка Лису - в консоль пришло новое значение размера
-        Fox fox = new Fox();
+        Fox fox1 = new Fox();
+        fox1.setName("Murzik");
+        Fox fox2 = new Fox();
+        fox2.setName("Murzik");
 
         zoo.addAnimal(new Lizard());
         //  zoo.addAnimal(new Cat());
@@ -30,12 +33,18 @@ public class ZooStartPoint {
         boolean cat3IsCat1 = (cat3.equals(cat1));
         boolean cat1IsCat1 = (cat1.equals(cat1));
         boolean cat1IsNull = cat1.equals(null);
-        boolean cat1IsFox = (cat1.equals(fox));
+        boolean cat1IsFox = (cat1.equals(fox1));
         boolean c = cat1IsCat2;
         boolean a = cat2IsCat3;
 
         System.out.println(c);
         System.out.println(a);
+
+      //  fox1 Is fox2  ПРОВЕРИТЬ !!!
+        boolean fox1IsFox2 = (fox1.equals(fox2));
+        System.out.println(fox1IsFox2);
+
+        System.out.println(cat1IsFox);
 
     }
 }
