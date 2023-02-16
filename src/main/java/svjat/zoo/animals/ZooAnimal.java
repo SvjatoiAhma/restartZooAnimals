@@ -1,10 +1,20 @@
 package svjat.zoo.animals;
 
 public abstract class ZooAnimal implements Voice{
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    protected String name;
     @Override
     public int hashCode() {
 
-        return super.hashCode();
+        return (this.name != null)? name.hashCode(): super.hashCode();
     }
 
     @Override
@@ -15,7 +25,11 @@ public abstract class ZooAnimal implements Voice{
         if (!getClass().equals(obj.getClass())) {
             return false;
         }
-        return this == obj;
+        ZooAnimal an = ((ZooAnimal) obj);
+        if (this.name != null && an.getName() != null) {
+            return this.name.equals(an.getName());
+        }
+         return false;
     }
 
     @Override

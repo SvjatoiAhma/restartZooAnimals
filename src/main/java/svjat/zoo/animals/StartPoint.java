@@ -30,7 +30,7 @@ public class StartPoint {
         listZoo2.remove(" ");
 
         for(Object o:listZoo2) {
-            System.out.println("Новый список " + o);
+     //       System.out.println("Новый список " + o);
         }
     }
 }
