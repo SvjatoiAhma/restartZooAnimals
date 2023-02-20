@@ -5,11 +5,9 @@ public abstract class ZooAnimal implements Voice{
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     protected String name;
     @Override
     public int hashCode() {
